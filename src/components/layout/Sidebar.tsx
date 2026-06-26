@@ -9,7 +9,6 @@ import {
   Bell,
   Users,
   AlertTriangle,
-  Zap,
   RotateCcw
 } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
@@ -68,9 +67,11 @@ export function Sidebar() {
       <div className="flex h-full flex-col">
         {/* Logo */}
         <div className="flex h-16 items-center gap-3 px-6 border-b border-sidebar-border">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sidebar-primary">
-            <Zap className="h-6 w-6 text-sidebar-primary-foreground" />
-          </div>
+         <img
+            src="/logo.png"
+            alt="logo"
+            className="h-10 w-10 object-contain"
+          />
           <div>
             <h1 className="text-lg font-semibold text-sidebar-foreground">GPDR</h1>
             <p className="text-xs text-sidebar-foreground/60">Gestion Pièces de Rechange</p>

@@ -14,6 +14,7 @@ import {
 import { Badge } from '@/components/ui/badge';
 import { useNotifications } from '@/hooks/useNotifications';
 import { useAuth } from '@/contexts/AuthContext';
+import logo from '@/public/logo.png';
 
 export function Sidebar() {
   const location = useLocation();

@@ -6,7 +6,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
-import { Zap, Loader2, Eye, EyeOff } from 'lucide-react';
+import { Loader2, Eye, EyeOff } from 'lucide-react';
 import { z } from 'zod';
 
 const loginSchema = z.object({
@@ -82,9 +82,11 @@ export default function Login() {
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
           <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
-              <Zap className="h-7 w-7 text-primary-foreground" />
-            </div>
+           <img
+                src="/logo.png"
+                alt="Logo"
+                className="h-10 w-10 object-contain"
+              />
             <div>
               <h1 className="text-2xl font-bold text-foreground">GPDR</h1>
               <p className="text-xs text-muted-foreground">Gestion Pièces de Rechange</p>
